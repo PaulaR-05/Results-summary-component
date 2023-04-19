@@ -1,5 +1,24 @@
 :root {
   --font-family: "Hanken Grotesk", sans-serif;
+  --font-size: 18px;
+  --Light-red: hsl(0, 100%, 67%);
+  --redHSLA: hsla(0, 100%, 67%, 0.253);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --yellowHSLA: hsl(39, 100%, 56%, 0.253);
+  --Green-teal: hsl(166, 100%, 37%);
+  --greenHSLA: hsl(166, 100%, 37%, 0.253);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --CobaltHSLA: hsl(234, 85%, 45%, 0.253);
+
+  --Light-slate: hsl(252, 100%, 67%);
+  --Light-royal: hsl(241, 81%, 54%);
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray: hsl(224, 30%, 27%);
 }
 
 *,
@@ -18,6 +37,7 @@ body {
 }
 
 body {
+  font-size: var(--font-size);
   line-height: 1.5;
   min-height: 100vh;
   display: grid;
@@ -63,11 +83,64 @@ h6 {
   justify-content: center;
 }
 
-.score {
+.container__score {
+  margin-top: 0.5rem;
+  color: var(--White);
   text-align: center;
   max-width: 300px;
+  padding: 1rem;
+  background-color: var(--Light-royal);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.container__score--result {
+  color: var(--White);
+  margin: 0 auto;
+  width: 40%;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--Cobalt-blue);
+}
+.container__stats {
+  max-width: 300px;
+}
+.container__stats--reaction {
+  background-color: var(--redHSLA);
+  color: var(--Light-red);
 }
 
-.stats {
-  max-width: 300px;
+.container__stats--memory {
+  background-color: var(--yellowHSLA);
+  color: var(--Orangey-yellow);
+}
+
+.container__stats--verbal {
+  background-color: var(--greenHSLA);
+  color: var(--Green-teal);
+}
+
+.container__stats--visual {
+  background-color: var(--CobaltHSLA);
+  color: var(--Cobalt-blue);
+}
+.container__stats--reaction,
+.container__stats--memory,
+.container__stats--verbal,
+.container__stats--visual {
+  margin: 1rem 0;
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.container__stats p {
+  width: 5rem;
+  margin-left: 1rem;
+}
+
+.container__stats span {
+  color: black;
+  padding-left: 5.1rem;
 }
