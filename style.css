@@ -37,6 +37,7 @@ body {
 }
 
 body {
+  background-color: var(--Light-lavender);
   font-size: var(--font-size);
   line-height: 1.5;
   min-height: 100vh;
@@ -77,6 +78,7 @@ h6 {
 }
 
 .container {
+  background-color: var(--White);
   max-width: 375px;
   display: flex;
   flex-direction: column;
@@ -84,7 +86,6 @@ h6 {
 }
 
 .container__score {
-  margin-top: 0.5rem;
   color: var(--White);
   text-align: center;
   max-width: 300px;
@@ -93,16 +94,36 @@ h6 {
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
+.container__score h1 {
+  font-size: 14px;
+  font-weight: lighter;
+  color: var(--Light-lavender);
+  margin-bottom: 1rem;
+}
 .container__score--result {
   color: var(--White);
   margin: 0 auto;
-  width: 40%;
+  width: 45%;
   padding: 1rem;
   border-radius: 50%;
   background-color: var(--Cobalt-blue);
 }
+.container__score--result h2 {
+  font-size: 40px;
+}
+.container__score--info {
+  margin-top: 0.5rem;
+}
+
+.container__score--info p {
+  margin: 0.3rem 1.5rem;
+  font-size: 12px;
+  font-weight: lighter;
+  color: var(--Light-lavender);
+}
 .container__stats {
   max-width: 300px;
+  padding: 1.5rem;
 }
 .container__stats--reaction {
   background-color: var(--redHSLA);
@@ -129,7 +150,7 @@ h6 {
 .container__stats--visual {
   margin: 1rem 0;
   border-radius: 5px;
-  padding: 0.7rem 1rem;
+  padding: 0.5rem 1rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -142,5 +163,21 @@ h6 {
 
 .container__stats span {
   color: black;
-  padding-left: 5.1rem;
+  padding-left: 2rem;
+}
+
+.container__stats--link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border: 0.1rem solid var(--Dark-gray);
+  background-color: var(--Dark-gray);
+  color: var(--White);
+  border-radius: 20px;
+  padding: 0.5rem 0;
+  font-size: 14px;
+}
+
+footer {
+  font-size: 10px;
 }
