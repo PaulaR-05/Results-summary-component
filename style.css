@@ -106,10 +106,20 @@ h6 {
   width: 40%;
   padding: 1rem;
   border-radius: 50%;
-  background-color: var(--Cobalt-blue);
+  background: linear-gradient(
+    180deg,
+    #4d21c9,
+    rgba(37, 33, 201, 0) 120%,
+    rgba(37, 33, 201, 0) 0
+  );
 }
 .container__score--result h2 {
-  font-size: 40px;
+  font-size: 50px;
+}
+.container__score--result p {
+  color: var(--Light-lavender);
+  font-weight: lighter;
+  font-size: 15px;
 }
 .container__score--info {
   margin-top: 0.5rem;
@@ -217,7 +227,7 @@ footer {
   .container__score--result {
     color: var(--White);
     margin: 0 auto;
-    width: 45%;
+    width: 48%;
     padding: 2rem;
     border-radius: 50%;
   }
